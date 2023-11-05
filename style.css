@@ -5,11 +5,15 @@
 *::after {
   padding: 0;
   margin: 0;
+
   box-sizing: border-box;
 }
 
-body,
+body{
+  background-image: url(arseniy-chebynkin-matsuri.jpg);
+}
 input {
+
   font-family: "Popins", sns-serif;
   font-size: 0.5cm;
 }
@@ -72,12 +76,30 @@ main {
   min-height: 100vh;
 
   overflow: hidden;
-  background-image: url(arseniy-chebynkin-matsuri.jpg);
+  
   padding: 2rem;
 
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.icon-close{
+  position:absolute;
+  top: 8px;
+  left: 420px;
+  width: 20px;
+  height: 20px;
+  color:#fff;
+  background:transparent;
+  font-size: 0.6cm;
+ 
+  display: flex;
+  cursor: pointer;
+  transition: .5s;
+  overflow: hidden;
+  /* border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px; */
+  z-index: 1;
 }
 
 .box {
@@ -92,27 +114,10 @@ main {
     backdrop-filter: blur(30px);
   box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.27);
 }
-.box .icon-close{
-  position: absolute;
-top: 5px;
-  right: 0;
-  left:468;
-  width: 40px;
-  height: 40px;
-  background:transparent;
-  font-size: 0.6em;
-  color: #fff;
-  display: flex;
-  cursor: pointer;
-  transition: .5s;
-  overflow: hidden;
-  border-bottom-left-radius: 20px;
-  border-top-right-radius: 20px;
-  z-index: 1;
-}
+
 .box .icon-close:hover{
   
-  color: black;
+  /* color: black; */
  
 }
 
