@@ -14,7 +14,7 @@
   <nav>
         <div class="nav-bar">
             <i class='bx bx-menu sidebarOpen' ></i>
-            <img src="imgs/logo.png" class="logo">
+            <img src="img/logo.png" class="logo">
 
             <div class="menu">
                 <div class="logo-toggle">
@@ -24,7 +24,7 @@
 
                 <ul class="nav-links">
                     <li><a href="#">Home</a></li>
-                    <li><a href="lessons.php">Learn</a></li>
+                    <li><a href="lessons-html.php">Learn</a></li>
                     <li><a href="#">Leaderboard</a></li>
                     <li><a href="#">Dashboard</a></li>
                     <button class="login-btn">LOG IN</button>
@@ -37,7 +37,7 @@
     <main>
       
      <div class="box">
-      <span class="icon-close"> <img src="imgs/cross.256x256.png">
+      <span class="icon-close"> <img src="img/cross.256x256.png">
       
       </span>
         <div class="inner-box">
