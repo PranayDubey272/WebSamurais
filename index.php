@@ -3,32 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sign in & Sign up Form</title>
-    <link rel="stylesheet" href="style.css" />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+   <link rel="stylesheet" href="style.css">
+  
+    <link rel="stylesheet" href="test.css">
   </head>
   <body>
-    <header>
-    
-      <nav class="navigation">
-          <a href="#">Home</a>
-          <a href="#">Signup</a>
-          <a href="#">Learn</a>
-          <a href="#">Leaderboard</a>
-          <button class="btnLogin-popup">Login</button>
-          
-      </nav>
-  </header>
+  <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <img src="imgs/logo.png" class="logo">
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">CodingLab</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="lessons.php">Learn</a></li>
+                    <li><a href="#">Leaderboard</a></li>
+                    <li><a href="#">Dashboard</a></li>
+                    <button class="login-btn">LOG IN</button>
+                </ul>
+               
+            </div>
+
+           
+    </nav>
     <main>
       
      <div class="box">
-      <span class="icon-close"> <img src="cross.256x256.png">
+      <span class="icon-close"> <img src="imgs/cross.256x256.png">
       
       </span>
         <div class="inner-box">
           
           <div class="forms-wrap">
-            <form action="index.html" autocomplete="off" class="sign-in-form">
+            <form action="login.php" autocomplete="off" class="sign-in-form" method="post">
               <div class="logo">
                 
               </div>
@@ -47,13 +62,15 @@
                     class="input-field"
                     autocomplete="off"
                     required
+                    name = "username";
                   />
-                  <label>Name</label>
+                  <label>Username</label>
                 </div>
-
+                
                 <div class="input-wrap">
                   <input
                     type="password"
+                    name = "password"
                     minlength="4"
                     class="input-field"
                     autocomplete="off"
@@ -61,24 +78,22 @@
                   />
                   <label>Password</label>
                 </div>
+                
 
-                <input type="submit" value="Sign In" class="sign-btn" />
+                <input type="submit" name="submit" value="Sign In" class="sign-btn" />
 
-                <p class="text">
-                  Forgotten your password or you login datails?
-                  <a href="#">Get help</a> signing in
-                </p>
+
               </div>
             </form>
-
-            <form action="index.html" autocomplete="off" class="sign-up-form">
+            <form action="signup.php" autocomplete="off" class="sign-up-form" method="post">
               
 
               
 
               <div class="actual-form">
                 <div class="heading1">
-                  <h2>Welcome New User</h2>
+                  <h2>Let the typing journey begin</h2>
+                  
                   </div>
                 <div class="input-wrap">
                   <input
@@ -87,10 +102,24 @@
                     class="input-field"
                     autocomplete="off"
                     required
+                    name="name";
                   />
                   
                   <label>Name</label>
                 </div>
+                <div class="input-wrap">
+                  <input
+                    type="text"
+                    minlength="9"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                    name="username"
+                  />
+                  
+                  <label>Username</label>
+                </div>
+
 
                 <div class="input-wrap">
                   <input
@@ -98,6 +127,7 @@
                     class="input-field"
                     autocomplete="off"
                     required
+                    name="email"
                   />
                   <label>Email</label>
                 </div>
@@ -109,6 +139,7 @@
                     class="input-field"
                     autocomplete="off"
                     required
+                    name="password"
                   />
                   <label>Password</label>
                 </div>
@@ -117,14 +148,12 @@
                   <h6>Already have an account?</h6>
                   <a href="#" class="toggle">Sign in</a>
                 </div>
+                <div class = "input-wrap">
+                <input type="file" name="pfp" accept="image/*">
+                </div> 
 
-                <input type="submit" value="Sign Up" class="sign-btn" />
+                <input type="submit" value="Sign Up" class="sign-btn" name="submit"/>
 
-                <p class="text">
-                  By signing up, I agree to the
-                  <a href="#">Terms of Services</a> and
-                  <a href="#">Privacy Policy</a>
-                </p>
               </div>
             </form>
           </div>
@@ -137,9 +166,10 @@
         </div>
       </div>
     </main>
-
+    <div id="stars-container"></div>
     <!-- Javascript file -->
-
+    
     <script src="app.js"></script>
+    <script src="three3.js"></script>
   </body>
 </html>
