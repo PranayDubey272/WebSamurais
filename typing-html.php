@@ -1,3 +1,13 @@
+<?php
+session_start();
+if (isset($_SESSION['username'])) {
+    echo '<p>Hello, ' . $_SESSION['username'] . '! Welcome!</p>';
+    include 'navbar-loggedin.php';
+} else {
+    include 'navbar.php';
+}
+
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -15,29 +25,6 @@
     <title> Typing Page</title>
 </head>
 <body>
-    <nav>
-        <div class="nav-bar">
-            <i class='bx bx-menu sidebarOpen' ></i>
-            <img src="logo.png" class="logo">
-
-            <div class="menu">
-                <div class="logo-toggle">
-                    <img src="logo.png" class="logo">
-                    <i class='bx bx-x siderbarClose'></i>
-                </div>
-
-                <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Learn</a></li>
-                    <li><a href="#">Leaderboard</a></li>
-                    <li><a href="#">Dashboard</a></li>
-                    <button class="login-btn">LOG IN</button>
-                </ul>
-               
-            </div>
-            
-           
-    </nav>
     <div class="working">
     <div id="cursor"></div> 
     <div id="sentence-display" class="landingline">
