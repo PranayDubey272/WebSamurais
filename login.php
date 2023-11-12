@@ -1,13 +1,6 @@
 <?php 
-if(isset($_POST['submit']))
-{
-$namef = "websamurais";
-$passwordf = "pranayjatinharshit";
-$conn = new mysqli("localhost", $namef, $passwordf, $namef);
-
-if (!$conn) {
-die("Connection failed: ");
-}
+session_start();
+include 'db-connection.php';
 $username = $_POST['username'];
 $password = $_POST['password'];
 
@@ -21,7 +14,9 @@ if ($result->num_rows == 1) {
 
     // Verify the password
     if (password_verify($password, $user['password'])) {
+        $_SESSION['username'] = $username;
         header("Location: typing-html.php");
+        exit;
     } else {
         echo "Incorrect password";
     }
@@ -32,5 +27,4 @@ if ($result->num_rows == 1) {
 // Close the database connection
 $conn->close();
 
-}
 ?>

@@ -455,13 +455,14 @@ span:hover{
     margin-top: 10px;
 }
 
-#timer, #accuracy {
+#timer,#score,#accuracy {
     position: relative;
-    left: 48%;
+    left: 45%;
     top: 500px;
     color: white;
-    margin-right: 20px;
+    margin-right: 40px;
 }
+
 
 #start-button, #restart-button {
     font-size: 16px;
