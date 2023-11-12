@@ -67,7 +67,16 @@
     <h1>Tanabata Leaderboard</h1>
   </header>
 
+<<<<<<< HEAD
   <?php include 'navbar-loggedin.php' ?>
+=======
+  <nav>
+    <a href="#" onclick="showTab('allTime')">All Time</a>
+    <a href="#" onclick="showTab('weekly')">Weekly</a>
+    <a href="#" onclick="showTab('daily')">Daily</a>
+    <a href="#" onclick="showTab('friends')">Friends</a>
+  </nav>
+>>>>>>> 5aa1e3ee4e6a17bc86679a55031dedf0d5560cac
 
   <section>
     <table id="leaderboardTable">
