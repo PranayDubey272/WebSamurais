@@ -11,33 +11,13 @@
     <link rel="stylesheet" href="test.css">
   </head>
   <body>
-  <nav>
-        <div class="nav-bar">
-            <i class='bx bx-menu sidebarOpen' ></i>
-            <img src="imgs/logo.png" class="logo">
-
-            <div class="menu">
-                <div class="logo-toggle">
-                    <span class="logo"><a href="#">CodingLab</a></span>
-                    <i class='bx bx-x siderbarClose'></i>
-                </div>
-
-                <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="lessons.php">Learn</a></li>
-                    <li><a href="#">Leaderboard</a></li>
-                    <li><a href="#">Dashboard</a></li>
-                    <button class="login-btn">LOG IN</button>
-                </ul>
-               
-            </div>
-
-           
-    </nav>
+    <?php
+   include 'navbar.php'
+   ?>
     <main>
       
      <div class="box">
-      <span class="icon-close"> <img src="imgs/cross.256x256.png">
+      <span class="icon-close"> <img src="img/cross.256x256.png">
       
       </span>
         <div class="inner-box">
