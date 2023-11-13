@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Leaderboard</title>
   <link rel="stylesheet" href="style.css">
+<<<<<<< HEAD
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+=======
+>>>>>>> 47b9d4c8a7e46f566d7f3b7e6105e8a4770f393b
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -68,7 +71,14 @@
     <h1>Tanabata Leaderboard</h1>
   </header>
 
+]
   <?php include 'navbar-loggedin.php' ?>
+  <nav>
+    <a href="#" onclick="showTab('allTime')">All Time</a>
+    <a href="#" onclick="showTab('weekly')">Weekly</a>
+    <a href="#" onclick="showTab('daily')">Daily</a>
+    <a href="#" onclick="showTab('friends')">Friends</a>
+  </nav>
 
   <section>
     <table id="leaderboardTable">

@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const remainingMilliseconds = Math.max(0, selectedTimer * 1000 - elapsedMilliseconds);
         const remainingSeconds = Math.ceil(remainingMilliseconds / 1000);
         timerElement.textContent = `${remainingSeconds}s`;
-    
+
         if (remainingSeconds === 0) {
             handleFinish();
         }
