@@ -1,53 +1,73 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+  display: flex;
+  min-height: 100vh;
+}
 
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
+header {
+  background: linear-gradient(to right, #3498db, #2c3e50);
+  color: #ecf0f1;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
 
-  nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: #444;
-    padding: 10px;
-  }
-  nav a:hover{
-      color: black;
-      background-color: #ddd;
-  }
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(to right, #2c3e50, #34495e);
+  padding: 10px;
+  border-right: 2px solid #2c3e50;
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
+  height: calc(100vh - 450px); /* Adjusted for header height */
+}
 
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
+nav a {
+  color: #ecf0f1;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
 
+nav a:hover {
+  background-color: #2c3e50;
+}
 
-  section {
-    padding: 20px;
-  }
+section {
+  padding: 20px;
+  flex: 1;
+}
 
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 8px;
+}
 
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+th {
+  background: linear-gradient(to right, #2c3e50, #3498db);
+  color: #ecf0f1;
+}
+
+@media screen and (max-width: 600px) {
   th, td {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+    padding: 10px;
   }
-
-  th {
-    background-color: #333;
-    color: #fff;
-  }
+}
