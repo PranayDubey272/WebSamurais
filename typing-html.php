@@ -1,3 +1,13 @@
+<?php
+session_start();
+if (isset($_SESSION['username'])) {
+    echo '<p>Hello, ' . $_SESSION['username'] . '! Welcome!</p>';
+    include 'navbar-loggedin.php';
+} else {
+    include 'navbar.php';
+}
+
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -15,39 +25,39 @@
     <title> Typing Page</title>
 </head>
 <body>
-    <nav>
-        <div class="nav-bar">
-            <i class='bx bx-menu sidebarOpen' ></i>
-            <img src="logo.png" class="logo">
-
-            <div class="menu">
-                <div class="logo-toggle">
-                    <img src="logo.png" class="logo">
-                    <i class='bx bx-x siderbarClose'></i>
-                </div>
-
-                <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Learn</a></li>
-                    <li><a href="#">Leaderboard</a></li>
-                    <li><a href="#">Dashboard</a></li>
-                    <button class="login-btn">LOG IN</button>
-                </ul>
-               
-            </div>
-            
-           
-    </nav>
     <div class="working">
+    <div id="timer-options">
+    <label for="timer-select"></label>
+    <select id="timer-select" class="tnl">
+        <option value="30">30 seconds</option>
+        <option value="60">1 minute</option>
+        <option value="120">2 minutes</option>
+    </select>
+    <div class="tnl">
+    <label for="sentence-count" class="tnl"></label>
+    <select id="sentence-count">
+        <option value="1">1 Sentence</option>
+        <option value="2">2 Sentences</option>
+        <option value="3">3 Sentences</option>
+    </select>
+    <label for="typeof-sentence" class="tnl"></label>
+    <select id="sentence-type">
+        <option value="1">Without Punctuations and numbers</option>
+        <option value="2">with Punctuations and numbers</option>
+    </select>
+</div>
+
     <div id="cursor"></div> 
     <div id="sentence-display" class="landingline">
         <p>Press Enter to start typing!</p>
     </div>
     
     <div id="feedback-message"></div>
+    <div id="errors"></div>
     <div id="stats">
         <span id="timer">0s</span>
         <span id="accuracy">Accuracy: 100%</span>
+        
     </div>
     </div>
     <div class="keyboard">
