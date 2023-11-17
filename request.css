@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    
+    /* align-items: center;
+    justify-content: center; */
+    height: 100vh;
+  }
+
+  #friend-requests-container {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 10px; /* Adjust as needed */
+  }
+
+  #friend-requests-header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 20px;
+  }
+
+  .friend-request {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content :space-between;
+  }
+
+  .friend-request img {
+    width: 50px;
+    height: 50px;
+   border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .friend-request-buttons {
+    display: flex;
+  }
+
+  .friend-request-buttons button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .add-button {
+    background-color: #2ecc71;
+    color: #fff;
+  }
+
+  .reject-button {
+    background-color: #e74c3c;
+    color: #fff;
+  }
+  /* .friend-name{
+    margin-left: -1080px;
+  } */
