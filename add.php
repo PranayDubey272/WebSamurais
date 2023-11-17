@@ -16,10 +16,7 @@
     <h2>Add Friends</h2>
   </div>
 
-  <input type="text" id="search-input" placeholder="Search for friends">
-
-  <div id="search-results"></div>
-
+ 
 </div>
 
 <script src="add.js">

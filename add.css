@@ -27,35 +27,7 @@ body {
     margin-bottom: 20px;
   }
 
-  #search-input {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-  }
-
-  #search-results {
-    max-height: 150px;
-    overflow-y: auto;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 10px;
-  }
-
-  .search-result {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 5px;
-    cursor: pointer;
-  }
-
-  .search-result img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
+ 
 
   .send-request-button {
     background-color: #2ecc71;
