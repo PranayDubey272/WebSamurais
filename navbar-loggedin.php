@@ -1,7 +1,6 @@
 <?php
     session_start();
     $greeting = "Hi, " . $_SESSION['username'];
-
 ?>
 <nav>
     <div class="nav-bar">

@@ -52,6 +52,7 @@ if (isset($_SESSION['username'])) {
     </div>
     
     <div id="feedback-message"></div>
+    <div id="errors"></div>
     <div id="stats">
         <span id="timer">0s</span>
         <span id="accuracy">Accuracy: 100%</span>

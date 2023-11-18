@@ -7,6 +7,61 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <link rel="stylesheet" href="leaderboard.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #444;
+      padding: 10px;
+    }
+    nav a:hover{
+        color: black;
+        background-color: #ddd;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+
+    section {
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
 

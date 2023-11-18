@@ -52,7 +52,6 @@ if (isset($_GET['interval'])) {
 
             
             
-        // Add more cases for other intervals if needed
         default:
             break;
     }
