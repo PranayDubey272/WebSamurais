@@ -1,0 +1,91 @@
+#customTabs {
+    display: flex;
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+  #customTabs a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px 5px 0 0;
+    margin-right: 10px;
+    background-color: #444;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  #customTabs a:hover {
+    background-color: #555;
+  }
+
+  #allTimeContent,
+  #weeklyContent,
+  #dailyContent,
+  #friendsContent {
+    padding: 20px;
+    margin-top: 70px; /* Adjust this value based on your header height */
+  }
+  #leaderboardTable{
+    position: fixed;
+    top:150px;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #444;
+    padding: 10px;
+  }
+  nav a:hover{
+      color: black;
+      background-color: #ddd;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+
+  section {
+    padding: 20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    background-color: #333;
+    color: #fff;
+  }

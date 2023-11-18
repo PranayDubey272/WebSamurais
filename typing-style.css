@@ -1,6 +1,7 @@
 /* ===== Google Font Import - Poppins ===== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+
 *{
     margin: 0;
     padding: 0;
@@ -44,7 +45,13 @@ nav{
     background-color: transparent;
     z-index: 100;
 }
-
+#timer-select, #sentence-count, #sentence-type{
+    z-index: 10;
+    position: relative;
+    top: 600px;
+    background-color: black;
+    color: white;
+}
 body.dark nav{
     border: 1px solid #393838;
 
@@ -142,9 +149,9 @@ nav .nav-bar .sidebarOpen{
 .landingline{
     position: relative;
     font-size: 25px;
-    left: 45px;
+    left: 25%;
     font-weight: 900;
-    top: 180px;
+    top: 50px;
     padding-bottom: 60px;
     text-align: center;
     color: white;
@@ -163,7 +170,7 @@ nav .nav-bar .sidebarOpen{
 .keyboard{
     text-align: 190px;
     left: 220px;
-    margin-top: 100px   ;
+    margin-top: 0px   ;
     border: 2px solid white;
    /* background-color: aliceblue; */
    // background-image: url(new.jpg);
@@ -315,7 +322,7 @@ span:hover{
     color: white;
 }
 .tab{
-    padding-left:44px ;
+    padding-left:52px ;
  
     padding-right:57px ;
     padding-top: 15px;
@@ -328,7 +335,7 @@ span:hover{
 }
 .caps{
     
-    padding-left:47px ;
+    padding-left:55px ;
      padding-right:28px ;
     padding-top: 15px;
     padding-bottom: 18px;
@@ -339,7 +346,7 @@ span:hover{
     color: white;
 }
 .shift{
-    padding-left:40px ;
+    padding-left:45px ;
      padding-right:52px ;
     padding-top: 15px;
     padding-bottom: 18px;
@@ -436,13 +443,13 @@ span:hover{
     padding: 5px;
 }
 
-#feedback-message {
+#feedback-message,#errors {
     text-align: 190px;
     left: 220px;
     width: 830px;
     height: 320px;
     position: absolute;
-    padding-top: 550px;
+    padding-top: 450px;
     padding-bottom: 60px;
     padding-left: 410px;
     margin-left: 0;
@@ -452,16 +459,17 @@ span:hover{
 }
 
 #stats {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
-#timer, #accuracy {
+#timer,#score,#accuracy {
     position: relative;
-    left: 48%;
-    top: 500px;
+    left: 45%;
+    top: 400px;
     color: white;
-    margin-right: 20px;
+    margin-right: 40px;
 }
+
 
 #start-button, #restart-button {
     font-size: 16px;
@@ -484,3 +492,33 @@ span:hover{
     background-color: #000; /* Cursor color */
     transition: left 0.1s ease-in-out;
 }
+
+#sentence-display p, .landingline p{
+        overflow-wrap: break-word;
+       /* Display an ellipsis (...) to indicate text overflow */
+  }
+.highlight{
+    background-color:hotpink;
+}
+.correct-word.current-word {
+    border: 2px solid pink;
+    padding: 2px;
+}
+#sentence-display {
+    max-width: 50%;
+    overflow: auto;  
+    white-space: pre-line; 
+    word-wrap: break-word; 
+    word-break: break-all; 
+    font-size: 18px; 
+}
+select{
+    min-width: 10em;
+    padding: 0.5em 1em;
+    background: transparent;
+    border: #444 solid;
+    border-radius: 1em;
+    color: white;
+    font:inherit;
+}
+

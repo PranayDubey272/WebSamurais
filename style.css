@@ -36,7 +36,7 @@ nav .nav-bar{
   max-width: 1300px;
   width: 100%;
   background-color: transparent;
-  margin: 0 auto;
+  margin: 0;
   padding: 0 30px;
   display: flex;
   align-items: center;
@@ -83,10 +83,9 @@ width: 140px;
 }
 
 .nav-bar .nav-links li{
-  margin: 0 5px;
+  margin: 0;
   list-style: none;
 }
-
 .nav-links li a{
   position: relative;
   font-size: 17px;
