@@ -1,0 +1,100 @@
+
+body{
+    height: 100vh;
+    overflow-y: scroll;
+}
+.box{
+    position: absolute;
+    margin-top: 16vh;
+    margin-left: 80px;
+    height: 70vh;
+    width: 30%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    gap: 1.5rem;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 10px 0 25px;
+    color: rgba(0, 0, 0, 0.416);
+    backdrop-filter: blur(0.8px);
+}
+.box h1{
+    margin-top: -370px;
+    text-align: center;
+    color:  white;
+    
+}
+.heading1{
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    margin-top:-200px ;
+    background-color: blueviolet;
+    cursor: pointer;
+    box-shadow: 10px 0 15px;
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.box h4{
+    color: #dae3e5;
+}
+.box a{
+    text-decoration : none;
+}
+.heading2{
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    margin-top:-70px ;
+    background-color: blueviolet;
+    cursor: pointer;
+    box-shadow: 10px 0 15px;
+    display: grid; align-items: center;
+    justify-content: space-around;
+    border: 30px;
+    border-color: black;
+
+}
+.heading3{
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    margin-top:60px ;
+    background-color: blueviolet;
+    cursor: pointer;
+    box-shadow: 10px 0 15px;
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.heading4{
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    margin-top:190px ;
+    background-color: blueviolet;
+    cursor: pointer;
+    box-shadow: 10px 0 15px;
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.liness{
+    margin-left: 55%;
+    padding-top: 15% ;
+   
+}
+.liness i{
+    font-size: 8vh;
+    color: white;
+}
+.liness h2{
+    padding-left: 7%;
+    font-style: italic;
+    font-size: 6vh;
+}
+
