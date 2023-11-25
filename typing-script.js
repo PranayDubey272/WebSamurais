@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     
     
-    let selectedTimer = 10; // Default timer duration in seconds
+    let selectedTimer = 30; // Default timer duration in seconds
 
     // Event listener for timer option selection
     document.getElementById('timer-select').addEventListener('change', function () {
@@ -218,25 +218,6 @@ document.addEventListener('DOMContentLoaded', function () {
     
     let finishHandled = false;
 
-        sentenceHTML += `${wordHTML} `;
-    }
-
-    sentenceDisplay.innerHTML = sentenceHTML.trim();
-    const correctWords = typedWords.filter((word, index) => words[index] === word).length;
-    const accuracy = Math.round((correctWords / words.length) * 100);
-    accuracyElement.textContent = `Accuracy: ${accuracy}%`;
-}
-
-    
-    
-    let selectedTimer = 30; // Default timer duration in seconds
-
-    // Event listener for timer option selection
-    document.getElementById('timer-select').addEventListener('change', function () {
-        selectedTimer = parseInt(this.value, 10);
-        timerElement.textContent = `${selectedTimer}s`;
-    });
-    
     function updateTimer() {
         const currentTime = new Date();
         const elapsedMilliseconds = currentTime - startTime;
@@ -276,14 +257,17 @@ document.addEventListener('DOMContentLoaded', function () {
         .catch(error => console.error('Error:', error));
     }
     function elapsedTimes(timer){
-        if(timer === 10){
-            return 0.16;
+        if(timer === 30){
+            return 0.5;
         }
         else if(timer === 60){
             return 1;
         }
         else if(timer == 120){
             return 2;
+        }
+        else if(timer == 300){
+            return 5;
         }
     }
         var beepsound = new Audio(   
@@ -363,9 +347,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
         }
-
+    
         handleInput();
-
+    
         // Check if the user has reached the end of the current sentence
         const currentSentence = sentenceList[currentSentenceIndex];
         if (userInput.length === currentSentence.length) {
