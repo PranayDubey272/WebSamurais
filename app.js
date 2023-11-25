@@ -37,3 +37,35 @@ function moveSlider() {
 bullets.forEach((bullet) => {
   bullet.addEventListener("click", moveSlider);
 });
+function onSuccessfulLogin(username) {
+  var navbar = document.getElementById("navbar");
+
+  // Change navbar content after successful login
+  navbar.innerHTML = `
+  <div class="nav-bar">
+  <i class='bx bx-menu sidebarOpen' ></i>
+  <img src="img/logo.png" class="logo">
+
+  <div class="menu">
+      <div class="logo-toggle">
+          <span class="logo"><a href="#">CodingLab</a></span>
+          <i class='bx bx-x siderbarClose'></i>
+      </div>
+
+      <ul class="nav-links">
+          <li><a href="#">Hoe</a></li>
+          <li><a href="lessons-html.php">Learn</a></li>
+          <li><a href="#">Leaderboard</a></li>
+          <li><a href="#">Dashboard</a></li>
+          <button class="login-btn">LOG IN</button>
+      </ul>
+     
+  `;
+}
+
+function logout() {
+  // reload the page
+  window.location.reload();
+}
+
+onSuccessfulLogin('logged-in-username');

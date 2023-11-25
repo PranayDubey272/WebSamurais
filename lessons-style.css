@@ -1,0 +1,375 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popns', sans-seif;
+    transition: all 0.4s ease;;
+}
+ ::-webkit-scrollbar {
+    display: none;
+  } 
+
+/* ===== Colours ===== */
+
+
+/* Style for square scroll bar */
+/* ::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 2px; 
+} */
+
+:root{
+    --body-color: #E4E9F7;
+    --nav-color: #4070F4;
+    --side-nav: #010718;
+    --text-color: #FFF;
+    --search-bar: #F2F2F2;
+    --search-text: #010718;
+}
+
+body{
+    height: 100vh;
+    
+    
+}
+
+body.dark{
+    --body-color: #18191A;
+    --nav-color: #242526;
+    --side-nav: #242526;
+    --text-color: #CCC;
+    --search-bar: #242526;
+}
+
+section{
+    padding: 80px 13%;
+}
+.learn{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/light\ gradient\ 1.png);
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 30px;
+    box-shadow: 10px 10px #18191A;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    align-items: center;
+}
+.learn-text i{
+    color: wheat;
+    font-size: 8vh;
+    margin-left: -30px;
+    
+}
+.learn-text h1{
+    color: #ddd;
+    font-size: 30px;
+    margin: 10px 0 10px;
+}
+.learn-text h6{
+    
+   color: #fff;
+   font-size: 18px;
+   font-weight: 600;
+   margin-bottom: 45px;
+}
+.learn-img img{
+   
+   height: 350px;
+   width: 80%;
+
+}
+.container{
+    position: absolute;
+    padding-top: 30px;
+    display: grid;
+    text-decoration: none;
+
+}
+.container-box h1{
+    font-size: 30px;
+    margin: 15px 0 15px;
+    cursor: pointer;
+    color: wheat;
+    text-decoration: underline;
+}
+.container-box h6{
+    font-size: 15px;
+    color: wheat;
+    font-weight: 200;
+    
+}
+.container-box p{
+    color: wheat;
+  font-style: italic;
+}
+.begin{
+    color: wheat;
+    text-align: center;
+   padding-top: 250px;
+}
+.begin h2{
+    color: wheat;
+    background-color: wheat;
+    text-decoration: underline;
+}
+.lesson-heading{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 190px;
+    height: 250px;
+    width: 20%;
+    color: wheat;
+    /* padding-top: 190px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    gap: 1.5rem;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 10px 0 15px;
+}
+.lesson-heading a{
+    font-size: 20px;
+    text-decoration: underline;
+    font-weight: 300;
+    margin: 20px;
+    color: wheat;
+    text-align: center;
+    }
+    .lesson-heading i{
+        font-size: 55px;
+        font-weight: 300;
+        margin: 20px;
+        color: wheat;
+        text-align: center;
+        }
+
+.lesson-heading1{
+ position: absolute;
+  margin-top: 30px;
+ margin-left: 590px;
+height: 250px;
+width: 20%;
+color: wheat;
+/* padding-top: 190px; */
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+gap: 1.5rem;
+align-items: center;
+cursor: pointer;
+box-shadow: 10px 0 15px;
+}
+.lesson-heading1 i{
+font-size: 55px;
+font-weight: 300;
+margin: 20px;
+color: wheat;
+align-items: center;
+}
+.lesson-heading1 a{
+font-size: 20px;
+text-decoration: underline;
+font-weight: 300;
+ margin: 10px;
+ color: wheat;
+text-align: center;
+                }
+        
+.lesson-heading2{
+position: absolute;
+margin-top: 30px;
+margin-left: 990px;
+height: 250px;
+width: 20%;
+color: wheat;
+/* padding-top: 190px; */
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+gap: 1.5rem;
+align-items: center;
+cursor: pointer;
+box-shadow: 10px 0 15px;
+}
+.lesson-heading2 i{
+font-size: 55px;
+font-weight: 300;
+margin: 20px;
+color: wheat;
+align-items: center;
+}
+.lesson-heading2 a{
+font-size: 20px;
+text-decoration: underline;
+font-weight: 300;
+margin: 10px;
+color: wheat;
+text-align: center;
+}
+.lesson-heading3{
+position: absolute;
+margin-top: 30px;
+ margin-left: 190px;
+height: 250px;
+width: 20%;
+color: wheat;
+/* padding-top: 190px; */
+display: grid;
+ grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+gap: 1.5rem;
+align-items: center;
+cursor: pointer;
+box-shadow: 10px 0 15px;
+}
+.lesson-heading3 a{
+ font-size: 20px;
+ text-decoration: underline;
+font-weight: 300;
+ margin: 20px;
+ color: wheat;
+text-align: center;
+ }
+.lesson-heading3 i{
+ font-size: 55px;
+ font-weight: 300;
+ margin: 20px;
+ color: wheat;
+ text-align: center;
+ }
+ .lesson-heading4{
+    position: absolute;
+    margin-top: 30px;
+     margin-left: 590px;
+    height: 250px;
+    width: 20%;
+    color: wheat;
+    /* padding-top: 190px; */
+    display: grid;
+     grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    gap: 1.5rem;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 10px 0 15px;
+    }
+    .lesson-heading4 a{
+     font-size: 20px;
+     text-decoration: underline;
+    font-weight: 300;
+     margin: 20px;
+     color: wheat;
+    text-align: center;
+     }
+    .lesson-heading4 i{
+     font-size: 55px;
+     font-weight: 300;
+     margin: 20px;
+     color: wheat;
+     text-align: center;
+     }
+     .lesson-heading5{
+        position: absolute;
+        margin-top: 30px;
+        margin-left: 990px;
+        height: 250px;
+        width: 20%;
+        color: wheat;
+        /* padding-top: 190px; */
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+        gap: 1.5rem;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: 10px 0 15px;
+        }
+        .lesson-heading5 i{
+        font-size: 55px;
+        font-weight: 300;
+        padding-left: 80px;
+        margin: 30px;
+        color: wheat;
+        align-items: center;
+        }
+        .lesson-heading5 a{
+        font-size: 20px;
+        text-decoration: underline;
+        font-weight: 300;
+        margin: 10px;
+        color: wheat;
+        text-align: center;
+        }
+    .begin{
+    text-align: center;
+      padding-top: 340px;
+    }
+ .begin h2{
+   color: #275360;
+      text-decoration: underline;
+         }         
+
+
+@media (max-width: 790px) {
+    nav .nav-bar .sidebarOpen{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        height: 100%;
+        width: 320px;
+        left: -100%;
+        top: 0;
+        padding: 20px;
+        background-color: var(--side-nav);
+        z-index: 100;
+        transition: all 0.4s ease;
+    }
+
+    nav.active .menu{
+        left: -0%;
+    }
+
+    nav.active .nav-bar .navLogo a{
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .menu .logo-toggle{
+        display: block;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo-toggle .siderbarClose{
+        color: var(--text-color);
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .nav-bar .nav-links{
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .nav-links li a{
+        display: block;
+        margin-top: 20px;
+    }
+    .landingline{
+        font-size: 18px;
+    }
+}

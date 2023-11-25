@@ -10,6 +10,7 @@ if (!$conn) {
 die("Connection failed: ");
 }
 $name = $_POST['name'];
+
 $username = $_POST['username'];
 $email  = $_POST['email'];
 $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
@@ -20,7 +21,7 @@ $query = "INSERT INTO users (name, username, email, password) VALUES ('$name', '
 // Insert user data into the database
 
 if ($conn->query($query) === TRUE) {
-    header("Location: index.php");
+    header("Location: login-html.php");
 } else {
     echo "Error: " . $query . "<br>" . $conn->error;
 }
