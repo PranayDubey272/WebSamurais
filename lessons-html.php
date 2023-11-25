@@ -46,17 +46,17 @@
                 <h2>Beginners</h2>
             </div>
                 <div class="lesson-heading">
-                    <i class='bx bxs-book-open'></i>
-                    <a href="">
-                       J,F, and Space
-                        <a>
+                <i class='bx bxs-book-open'></i>
+                        <a href="https://www.dropbox.com/scl/fi/4xjlmyryxadtdvkn4n47r/4-proper_posture.webm?rlkey=9fjjthxttabjesv0mptw9dynf&dl=0">
+                           Typing Basics
+                            <a>
                        
                     </div>
                     <div class="lesson-heading1">
-                        <i class='bx bxs-book-open'></i>
-                        <a href="video/4-proper_posture.webm">
-                           U,R, and K keys
-                            <a>
+                    <i class='bx bxs-book-open'></i>
+                            <a href="https://dl.dropbox.com/scl/fi/2ead7rekfvxyjjn0czctt/5-practice_challenge.webm?rlkey=yg155ocne7rt2assldcjrgr2d&dl=0">
+                               D,E, and I keys
+                                <a>
                            
                         </div>
                         <div class="lesson-heading2">
@@ -70,14 +70,14 @@
                                 <h2>Intermediate</h2>
                             </div>
                             <div class="lesson-heading3">
-                                <i class='bx bxs-book-open'></i>
+                            <i class='bx bxs-book-open'></i>
                                <a href="https://dl.dropbox.com/scl/fi/d05c79v62zb4588yhvgke/Touch-Typing-Home-Row-Essentials-Lesson-1.mp4?rlkey=m82txs03ns74xe57k3soi53wp&dl=0">
                                 Home Row
                                </a>
                                </div>
                                     
                                     <div class="lesson-heading4">
-                                        <i class='bx bxs-book-open'></i>
+                                    <i class='bx bxs-book-open'></i>
                                         <a href="https://dl.dropbox.com/scl/fi/yw01w0gojc0ln8fzbdy5z/Touch-Typing-Index-Finger-Frenzy-Lesson-2.mp4?rlkey=ltqcom46k3ohhpthhfgdbca6j&dl=0">
                                            Index Finger
                                         </a>
