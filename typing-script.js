@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     
     
-    let selectedTimer = 30; // Default timer duration in seconds
+    let selectedTimer = 10; // Default timer duration in seconds
 
     // Event listener for timer option selection
     document.getElementById('timer-select').addEventListener('change', function () {
@@ -257,8 +257,8 @@ document.addEventListener('DOMContentLoaded', function () {
         .catch(error => console.error('Error:', error));
     }
     function elapsedTimes(timer){
-        if(timer === 30){
-            return 0.5;
+        if(timer === 10){
+            return 0.16;
         }
         else if(timer === 60){
             return 1;
@@ -266,16 +266,9 @@ document.addEventListener('DOMContentLoaded', function () {
         else if(timer == 120){
             return 2;
         }
-        else if(timer == 300){
-            return 5;
-        }
     }
-        var beepsound = new Audio(   
-            'https://www.soundjay.com/button/sounds/beep-01a.mp3');   
-                         
      function handleFinish() {
 
-        beepsound.play;   
 
         clearInterval(timerInterval);
 

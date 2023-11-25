@@ -37,8 +37,6 @@ if (isset($_SESSION['username'])) {
         <option value="30">30 seconds</option>
         <option value="60">1 minute</option>
         <option value="120">2 minutes</option>
-        <option value="300">5 minutes</option>
-
     </select>
     <div class="tnl">
     <label for="sentence-count" class="tnl"></label>
@@ -63,7 +61,6 @@ if (isset($_SESSION['username'])) {
     </div>
     
     <div id="feedback-message"></div>
-    <div id="errors"></div>
     <div id="stats">
         <span id="timer">0s</span>
         <span id="accuracy">Accuracy: 100%</span>
